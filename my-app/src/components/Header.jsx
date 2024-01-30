@@ -1,5 +1,5 @@
 import React from "react";
-import '../CSS/Header';
+import './Header';
 import Menu from './Menu';
 
 

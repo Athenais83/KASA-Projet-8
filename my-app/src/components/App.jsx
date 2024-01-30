@@ -1,8 +1,8 @@
 import React from 'react';
-import '../src/CSS/App';
+import './App'
 import './Header';
 import './Banner';
-import '../pages/AppRouter';
+import '../pages/AppRouter'
 
 
 import Header from './Header';
