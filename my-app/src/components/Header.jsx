@@ -1,6 +1,6 @@
-import React from "react"
-import '../sass/Header.scss'
-import Menu from './Menu'
+import React from "react";
+import '../CSS/Header';
+import Menu from './Menu';
 
 
 function Header() {
@@ -12,4 +12,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;

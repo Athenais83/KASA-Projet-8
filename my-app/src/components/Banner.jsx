@@ -1,5 +1,5 @@
-import React from "react"
-import '../sass/Banner.scss'
+import React from "react";
+import '../CSS/Banner';
 
 function Banner(){
     return( 
@@ -8,4 +8,4 @@ function Banner(){
         </div>
     )
 }
-export default Banner
+export default Banner;

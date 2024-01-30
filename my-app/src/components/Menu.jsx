@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
     return(
@@ -11,4 +11,4 @@ const Menu = () => {
         </nav>
     )
 }
-export default Menu
+export default Menu;
