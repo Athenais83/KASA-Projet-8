@@ -1,4 +1,5 @@
-import '../styles/Error'
+import React from 'react'
+import '../sass/Error.scss'
 
 function Error(){
     return (
@@ -7,7 +8,7 @@ function Error(){
         </div><div>
                 <h2>Oups! La page que vous demandez n'existe pas.</h2>
             </div><div>
-                <a href="#">Retourner sur la page d'accueil</a>
+                <a href="">Retourner sur la page d'accueil</a>
             </div></>
     )
 }

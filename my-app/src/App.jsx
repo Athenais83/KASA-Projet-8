@@ -1,6 +1,7 @@
 import './App.scss';
 import './components/Header'
 import './components/Banner'
+import './components/App-router'
 
 
 import Header from './components/Header'

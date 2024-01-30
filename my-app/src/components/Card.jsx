@@ -1,4 +1,12 @@
-import '../styles/Card.scss'
+import React from 'react'
+import '../sass/Card.scss'
+
+const Card - {( identifiant, title, cover) } => {
+    return(
+        <img src-{cover} alt-{title}/>
+        <h3>{title}</h3>
+    )
+}
 
 function Card(){
     return (
