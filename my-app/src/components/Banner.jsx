@@ -4,7 +4,7 @@ import '../sass/Banner.scss'
 function Banner(){
     return( 
         <div>
-            <img src="/assets/Image source 1.png" alt="image de la bannierre"></img>
+            <img src="/assets/source1.png" alt='image banniere accueil' className='image-banniere'/>
         </div>
     )
 }

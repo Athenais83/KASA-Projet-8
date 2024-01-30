@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react"
 import '../sass/Error.scss'
 
 function Error (){
     return (
         <><div>
             <h1>404</h1>
-        </div><div>
+        </div>
+        <div>
                 <h2>Oups! La page que vous demandez n'existe pas.</h2>
-            </div><div>
+            </div>
+            <div>
                 <a href="#">Retourner sur la page d'accueil</a>
             </div></>
     )
