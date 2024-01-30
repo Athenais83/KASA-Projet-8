@@ -1,12 +1,11 @@
 import React from "react"
-import logo from '../assets/logo.png'
-import '../styles/Header.css'
+import '../styles/Header.scss'
 
 
 function Header() {
     return (
     <div>
-            <img src={logo} alt='KASA' className='logo-kasa'/>
+            <img src="/assets/logo.png" alt='KASA' className='logo-kasa'/>
             <nav className='menu'>
                 <ul>
                     <li>Accueil</li>
