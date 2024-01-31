@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import AppRouter from "./pages/AppRouter"
 import './index'
-import App from './components/App'
+import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 
