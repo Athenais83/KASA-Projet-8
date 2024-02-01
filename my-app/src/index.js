@@ -1,15 +1,13 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
 import AppRouter from "./pages/AppRouter"
-import App from './App'
+import './sass/_main.scss'
 import reportWebVitals from './reportWebVitals'
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AppRouter />
-    <App />
   </React.StrictMode>
 );
 

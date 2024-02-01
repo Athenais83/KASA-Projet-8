@@ -5,10 +5,10 @@ import '../App'
 
 function Header() {
     return (
-    <div>
+    <section>
             <img src="/assets/logo.png" alt='KASA' className='logo-kasa'/>
             <Menu />
-    </div>
+    </section>
     )
 }
 

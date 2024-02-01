@@ -3,9 +3,10 @@ import "../App"
 
 function Banner(){
     return( 
-        <div> 
+        <section> 
             <img src="/assets/source1.png" alt=""/>
-        </div>
+            <p>Chez vous, partout et ailleurs</p>
+        </section>
     )
 }
 export default Banner

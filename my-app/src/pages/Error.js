@@ -1,8 +1,10 @@
 import React from "react"
+import Header from '../components/Header'
 
 function Error (){
     return (
         <><div>
+            <Header />
             <h1>404</h1>
         </div>
         <div>
