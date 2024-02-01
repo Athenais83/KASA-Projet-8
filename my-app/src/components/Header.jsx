@@ -1,5 +1,4 @@
 import React from "react"
-import './Header'
 import Menu from './Menu'
 import '../App'
 

@@ -1,5 +1,4 @@
 import React from "react"
-import './Banner'
 import "../App"
 
 function Banner(){
