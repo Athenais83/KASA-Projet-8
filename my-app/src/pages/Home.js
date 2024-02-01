@@ -3,25 +3,19 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
+import Gallery from '../components/Gallery';
 
 function Home (){
     return(
-        <><><section>
+        <body>
             <Header />
             <Menu />
-            </section>
-            </>
-            <>
-            <section>
-                <Banner />
-            </section>
-            </>
-            <>
-            <section>
-            <Footer />
-            </section>
-            </>
-            </>
+            <Banner />
+   <div>
+            <Gallery />
+   </div>
+            <Footer /> 
+        </body>
             
     )
 }
