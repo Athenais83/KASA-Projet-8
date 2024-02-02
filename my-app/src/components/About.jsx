@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import '../sass/_about.scss'
 
 function About(){
     return(
