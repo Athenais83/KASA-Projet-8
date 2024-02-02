@@ -4,8 +4,12 @@ import "../App"
 function Banner(){
     return( 
         <section className="banner"> 
+        <div className="image-container">
             <img src="/assets/source1.png" alt="" className="image-banner"/>
-            <p className="title-banner">Chez vous, partout et ailleurs</p>
+            </div>
+            <div className="text-image">
+                Chez vous, partout et ailleurs
+        </div>
         </section>
     )
 }

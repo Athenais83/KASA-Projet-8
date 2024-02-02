@@ -6,7 +6,7 @@ function About(){
     return(
         <>
         <Header />
-        <img src="/assets/source2.png" alt="banniere" className='photo-banner'/>
+        <About />
         <Footer />
         </>
     )

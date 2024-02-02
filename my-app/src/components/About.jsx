@@ -5,11 +5,9 @@ import '../sass/_about.scss'
 
 function About(){
     return(
-        <>
-        <Header />
+        <div>
         <img src="/assets/source2.png" alt="banniere" className='photo-banner'/>
-        <Footer />
-        </>
+        </div>
     )
 }
 
