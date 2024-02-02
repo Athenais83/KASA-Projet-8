@@ -1,0 +1,17 @@
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    color: #FF6060;
+    flex-direction: row;
+    
+}
+
+.link{
+    list-style: none;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 13px;
+    padding-left: 30px;
+}

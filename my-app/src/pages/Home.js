@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
-import Gallery from '../components/Gallery';
 
 function Home (){
     return(
@@ -11,9 +10,6 @@ function Home (){
             <Header />
             <Menu />
             <Banner />
-   <div>
-            <Gallery />
-   </div>
             <Footer /> 
         </body>
             
