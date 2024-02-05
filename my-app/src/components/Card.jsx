@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Card (id, title, cover) {
+function Card({ id, title, cover }) {
     return (
-        <div><Link to={'/CardInfo/${id}'} className="gallery_card">
-            <img src={cover} alt={title} />
-            <h3>{title}</h3>
-        </Link>
-            </div>
+        <div>
+            <Link to={`/CardInfo/${id}`} className="gallery_card">
+                <img src={cover} alt={title} />
+                <h3>{title}</h3>
+            </Link>
+        </div>
     );
-};
+}
 
 export default Card;
-
 

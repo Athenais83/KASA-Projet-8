@@ -5,6 +5,7 @@ import Card from '../components/Card';
 function Gallery(){
     return(
         <div>
+            
             {Logement.map((data) => {
                 return(
                     <Card
@@ -16,7 +17,7 @@ function Gallery(){
                 );
             })}
         </div>
-    );
+    ); 
 };
 
 export default Gallery;
