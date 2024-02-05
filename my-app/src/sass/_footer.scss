@@ -1,6 +1,15 @@
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
 .logofooter{
     width: 10%;
     color: white;
+    align-self: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 .mention{
@@ -9,6 +18,3 @@
     font-size: 18px;
 }
 
-.footer{
-    background-color: black;
-}

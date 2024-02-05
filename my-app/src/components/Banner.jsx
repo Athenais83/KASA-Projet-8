@@ -3,14 +3,14 @@ import "../App"
 
 function Banner(){
     return( 
-        <section className="banner"> 
+        <main className="banner"> 
         <div className="image-container">
             <img src="/assets/source1.png" alt="" className="image-banner"/>
             </div>
             <div className="text-image">
                 Chez vous, partout et ailleurs
         </div>
-        </section>
+        </main>
     )
 }
 export default Banner
