@@ -4,7 +4,7 @@ import Card from '../components/Card';
 
 function Gallery(){
     return(
-        <div>
+        <div className="card_gallery">
             
             {Logement.map((data) => {
                 return(

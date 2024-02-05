@@ -1,0 +1,12 @@
+.card_gallery{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery_card{
+    width: 90%;
+}
