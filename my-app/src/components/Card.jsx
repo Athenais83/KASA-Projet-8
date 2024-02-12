@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../sass/_card.scss';
-import DetailCard from './DetailCard';
 
-function Card({ id, title, cover }) {
+function Card({ id, title, cover}) {
     return (
        
         <article className='card'>
