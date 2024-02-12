@@ -18,7 +18,7 @@ function CardInfo () {
         <div>
           {cardData ? (
             <div>
-                <img src={cardData.pictures} alt={cardData.title}/>
+                <img src={cardData.pictures[0]} alt={cardData.title}/>
                 <p>{cardData.location}</p>
                 <p>{cardData.tags}</p>
                 <p>{cardData.rating}</p>

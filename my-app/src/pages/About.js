@@ -7,7 +7,7 @@ function About(){
     return(
         <>
         <Header />
-        <Banner />
+        <Banner imageUrl="/assets/source2.png"/>
         <Footer />
         </>
     )

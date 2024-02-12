@@ -8,7 +8,7 @@ function Home (){
     return(
         <body>
             <Header />
-            <Banner />
+            <Banner imageUrl="/assets/source1.png" text="Chez vous, partout et ailleurs"/>
             <Gallery />
             <Footer /> 
         </body>
