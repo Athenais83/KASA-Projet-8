@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import Logement from '../data/logement.json';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function CardInfo () {
     const {id} = useParams();
@@ -13,6 +14,7 @@ function CardInfo () {
     },[id]);
 
     return (
+        <><Header/>
         <div>
           {cardData ? (
             <div>
@@ -27,6 +29,8 @@ function CardInfo () {
             <p>Chargement des données...</p>
           )}
         </div>
+        <Footer/>
+        </>
       );
     }; 
 

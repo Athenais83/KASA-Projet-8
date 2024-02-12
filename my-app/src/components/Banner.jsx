@@ -1,26 +1,30 @@
 import React from "react"
 import "../App"
+import { useLocation } from "react-router-dom";
 
-function Banner(){
+function Banner () {
 
-    const currentUrl = window.location.href;
+    const location = useLocation();
+    const {pathname} = location;
 
-    let imageUrl;
-    if(currentUrl === "/"){
-        imageUrl = '/assets/source1.png';
-    } else if(currentUrl ==="/About"){
-        imageUrl = '/assets/source2.png';
-    }
+    const getImageUrl = (pathname) => {
+        switch (pathname) {
+            case "/About": 
+            return "/assets/source2.png";
+            case "/":
+                return "/assets/source1.png";
+                default:
+                    return '/assets/source1.png';
+        }
+    };
 
-    return( 
-        <main className="banner"> 
-        <div className="image-container">
-            <img src={imageUrl} alt="" className="image-banner"/>
-            </div>
-            <div className="text-image">
-                Chez vous, partout et ailleurs
+    const imageUrl = getImageUrl(pathname);
+
+    return(
+        <div>
+            <img src={imageUrl} alt={"Image" + pathname} className="image-banner"/>
+            <p className="text-image">Chez vous, partout et ailleurs</p>
         </div>
-        </main>
     )
 }
 export default Banner;
