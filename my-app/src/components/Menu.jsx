@@ -4,8 +4,8 @@ import '../sass/_menu.scss'
 const Menu = () => {
     return(
         <nav className='menu'>
-            <Link to="/" className='link'>Home</Link>
-            <Link to="/About" className='link'>About</Link>
+            <Link to="/" className='link'>Accueil</Link>
+            <Link to="/About" className='link'>A propos</Link>
         </nav>
     )
 }

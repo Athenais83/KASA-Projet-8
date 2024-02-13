@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Logement from '../data/logement.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SlideShow from '../components/slideshow';
 
 function CardInfo () {
     const {id} = useParams();
@@ -18,6 +19,7 @@ function CardInfo () {
         <div>
           {cardData ? (
             <div>
+                <SlideShow/>
                 <img src={cardData.pictures[0]} alt={cardData.title}/>
                 <p>{cardData.location}</p>
                 <p>{cardData.tags}</p>
