@@ -4,6 +4,8 @@ import Logement from '../data/logement.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SlideShow from '../components/SlideShow';
+import '../sass/_cardinfo.scss';
+import Collapse from '../components/Collapse';
 
 function CardInfo () {
     const {id} = useParams();
@@ -16,22 +18,28 @@ function CardInfo () {
 
     return (
         <><Header/>
-        <div>
+        <section className='cardinfo'>
           {cardData ? (
             <div>
-              <div className='carousel'>
+              <div>
                 <SlideShow pictures={cardData.pictures}/>
                 </div>
-                <p>{cardData.location}</p>
+                <h3 className='location'>{cardData.location}</h3>
                 <p>{cardData.tags}</p>
                 <p>{cardData.rating}</p>
+                <div className='collapse'>
+                <Collapse>
                 <p>{cardData.description}</p>
+                </Collapse>
+                <Collapse>
                 <p>{cardData.equipments}</p>
+                </Collapse>
+                </div>
             </div>
           ) : (
             <p>Chargement des données...</p>
           )}
-        </div>
+        </section>
         <Footer/>
         </>
       );
