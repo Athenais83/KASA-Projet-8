@@ -19,8 +19,9 @@ function CardInfo () {
         <div>
           {cardData ? (
             <div>
-                <SlideShow/>
-                <img src={cardData.pictures[0]} alt={cardData.title}/>
+              <div className='carousel'>
+                <SlideShow pictures={cardData.pictures}/>
+                </div>
                 <p>{cardData.location}</p>
                 <p>{cardData.tags}</p>
                 <p>{cardData.rating}</p>
