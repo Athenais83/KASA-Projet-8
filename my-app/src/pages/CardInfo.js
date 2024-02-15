@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Logement from '../data/logement.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import SlideShow from '../components/slideshow';
+import SlideShow from '../components/SlideShow';
 
 function CardInfo () {
     const {id} = useParams();

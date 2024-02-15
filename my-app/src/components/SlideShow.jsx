@@ -1,27 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react'
+import {Carousel} from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import Logement from '../data/logement.json'
 
-const SlideShow = ({images})=>{
-    const[currentIndex, setCurrentIndex] = useState(0);
-
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex)=>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
-    };
-
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex)=>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-    };
-
+const MyCarousel = () => { 
     return(
-        <div className='SlideShow'>
-            <button onClick={prevSlide}>Prev</button>
-            <img src={images[currentIndex]} alt="SlideShow"/>
-            <button onClick={nextSlide}>Next</button>
-        </div>
-    );
-};
+        <Carousel>
+            {Logement.map((data)=>(
+                <div key={data.id}>
+                    <img src={data.pictures} alt=""/>
+                </div>
+            ))}
+        </Carousel>
+    )
+}
 
-export default SlideShow;
+export default MyCarousel
