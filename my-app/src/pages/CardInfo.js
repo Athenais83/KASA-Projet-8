@@ -40,6 +40,10 @@ function CardInfo () {
                 </div>
                 <h3 className='location'>{cardData.location}</h3>
                 <p className='tags'>{cardData.tags}</p>
+                <div className='info-location'>
+                <p className='name'>{cardData.host.name}</p>
+                <img src={cardData.host.picture} alt="" className='picture'/>
+                </div>
                 <div className='star-rating'>
                   {generateStarRating(cardData.rating)}
                 </div>
