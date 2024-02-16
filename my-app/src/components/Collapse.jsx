@@ -11,7 +11,7 @@ function Collapse({children}){
     return(
         <div>
             <button onClick={toggleCollapse} className='btn-collapse'>
-                Description
+                description
                 <i class="fa-solid fa-chevron-up chevron"></i>
             </button>
             {isOpen && <div>{children}</div>}

@@ -14,13 +14,13 @@ function About(){
         <p>Fiabilité</p>
         </Collapse>
         <Collapse>
-        <p>Fiabilité</p>
+        <p>Respect</p>
         </Collapse>
         <Collapse>
-        <p>Fiabilité</p>
+        <p>Service</p>
         </Collapse>
         <Collapse>
-        <p>Fiabilité</p>
+        <p>Sécurité</p>
         </Collapse>
         </div>
         <Footer />

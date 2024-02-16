@@ -16,6 +16,20 @@ function CardInfo () {
         setCardData(data);
     },[id]);
 
+    const generateStarRating = (rating) => {
+      const roundedRating = Math.round(rating);
+      const stars = [];
+
+      for(let i = 0; i<5; i++){
+        if(i<roundedRating){
+          stars.push(<span key={i} className='star-filled'>&#9733;</span>);
+        } else{
+          stars.push(<span key={i} className='star-empty'>&#9734;</span>);
+        }
+      }
+      return stars;
+    };
+
     return (
         <><Header/>
         <section className='cardinfo'>
@@ -25,8 +39,10 @@ function CardInfo () {
                 <SlideShow pictures={cardData.pictures}/>
                 </div>
                 <h3 className='location'>{cardData.location}</h3>
-                <p>{cardData.tags}</p>
-                <p>{cardData.rating}</p>
+                <p className='tags'>{cardData.tags}</p>
+                <div className='star-rating'>
+                  {generateStarRating(cardData.rating)}
+                </div>
                 <div className='collapse'>
                 <Collapse>
                 <p>{cardData.description}</p>

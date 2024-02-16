@@ -13,3 +13,25 @@
 .cardinfo{
     width: 100%;
 }
+
+.tags{
+    background-color: #FF6060;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.star-filled{
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.star-empty{
+    color : rgba(0,0,0,0.1);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+}
