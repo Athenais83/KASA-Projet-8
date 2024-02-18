@@ -1,17 +1,18 @@
 import React from "react"
 import Header from '../components/Header'
+import '../sass/_error.scss'
 
 function Error (){
     return (
         <><div>
             <Header />
-            <h1>404</h1>
+            <h1 className="erreur">404</h1>
         </div>
-        <div>
+        <div className="oups">
                 <h2>Oups! La page que vous demandez n'existe pas.</h2>
             </div>
-            <div>
-                <p>Retourner sur la page d'accueil</p>
+            <div className="lien">
+                <a href="/">Retourner sur la page d'accueil</a>
             </div></>
     )
 }
