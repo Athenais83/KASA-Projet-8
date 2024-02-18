@@ -48,7 +48,7 @@ function CardInfo () {
                 <div className='star-rating'>
                   {generateStarRating(cardData.rating)}
                 </div>
-                <div className='collapse'>
+                <div className='info-collapse'>
                 <Collapse>
                 <p>{cardData.description}</p>
                 </Collapse>

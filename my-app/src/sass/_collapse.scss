@@ -1,15 +1,19 @@
-.chevron{
-    color: black;
-}
-
 .btn-collapse{
     color: white;
     background-color: #FF6060;
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
     font-size: 20px;
     text-align: left;
     border: #FF6060;
+}
+
+.info-collapse{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .icon{
