@@ -1,34 +1,34 @@
 import React from 'react'
 import Slider from 'react-slick'
 import '../sass/slide.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const SlideShow = ({pictures}) => { 
 
     const CustomPrevArrow = (props) =>(
         <button {...props} className='custom-prev-arrow'>
-            <i class="fa-solid fa-chevron-right"></i>
+            <FontAwesomeIcon icon={faChevronLeft}/>
         </button>
     );
 
     const CustomNextArrow = (props) => (
         <button {...props} className='custom-next-arrow'>
-            <i class="fa-solid fa-chevron-left"></i>
+            <FontAwesomeIcon icon={faChevronRight}/>
         </button>
     );
 
     const settings = {
-        arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        arrows: true,
         prevArrow : <CustomPrevArrow/>,
         nextArrow : <CustomNextArrow/>,
     };
 
    return(
     <Slider className='carousel' {...settings}>
-        {pictures.map((picture, index)=>(
+        {pictures.map((cardData, index)=>(
             <div key={index}>
-                <img src={picture} alt={`Slide ${index}`}/>
+                <img src={cardData} alt={""}/>
             </div>
         ))}
     </Slider>

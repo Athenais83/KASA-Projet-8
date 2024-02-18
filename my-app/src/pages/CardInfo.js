@@ -35,10 +35,11 @@ function CardInfo () {
         <section className='cardinfo'>
           {cardData ? (
             <div>
-              <div>
+              <div className='slide'>
                 <SlideShow pictures={cardData.pictures}/>
                 </div>
-                <h3 className='location'>{cardData.location}</h3>
+                <h3 className='title'>{cardData.title}</h3>
+                <h2 className='location'>{cardData.location}</h2>
                 <p className='tags'>{cardData.tags}</p>
                 <div className='info-location'>
                 <p className='name'>{cardData.host.name}</p>
