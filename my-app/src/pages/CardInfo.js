@@ -40,7 +40,11 @@ function CardInfo () {
                 </div>
                 <h3 className='title'>{cardData.title}</h3>
                 <h2 className='location'>{cardData.location}</h2>
-                <div className='tags'>{cardData.tags}</div>
+                <div className='tags'>{cardData.tags.map((tag, index)=>(
+            <div key={index}>
+                {tag}
+            </div>
+        ))}</div>
                 <div className='info-location'>
                 <p className='name'>{cardData.host.name}</p>
                 <img src={cardData.host.picture} alt="" className='picture'/>
@@ -49,10 +53,10 @@ function CardInfo () {
                   {generateStarRating(cardData.rating)}
                 </div>
                 <div className='info-collapse'>
-                <Collapse>
+                <Collapse title="Description">
                 <p>{cardData.description}</p>
                 </Collapse>
-                <Collapse>
+                <Collapse title="Equipements">
                 <p>{cardData.equipments}</p>
                 </Collapse>
                 </div>

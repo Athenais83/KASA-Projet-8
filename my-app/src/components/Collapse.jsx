@@ -3,7 +3,7 @@ import '../sass/_collapse.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-function Collapse({children}){
+function Collapse({children, title}){
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -13,7 +13,7 @@ function Collapse({children}){
     return(
         <div className='collapse'>
             <button onClick={toggleCollapse} className='btn-collapse'>
-                Description
+                {title}
                 <FontAwesomeIcon icon={faChevronUp} className='icon'/>
             </button>
             {isOpen && <div>{children}</div>}

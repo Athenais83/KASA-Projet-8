@@ -10,17 +10,13 @@ function About(){
         <Header />
         <Banner imageUrl="/assets/source2.png"/>
         <div className='collapse'>
-        <Collapse>
-        <h2>Fiabilité</h2>
+        <Collapse title="Fiabilité">
         </Collapse>
-        <Collapse>
-        <h2>Respect</h2>
+        <Collapse title="Respect">
         </Collapse>
-        <Collapse>
-        <h2>Service</h2>
+        <Collapse title="Service">
         </Collapse>
-        <Collapse>
-        <h2>Sécurité</h2>
+        <Collapse title="Sécurité">
         </Collapse>
         </div>
         <Footer />

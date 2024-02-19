@@ -1,21 +1,19 @@
 .card{
     width: 30%;
-    display: grid;
-    grid-template-rows: repeat(3);
-    row-gap: 5px;
-    padding-left: 40px;
 }
 
 .img_card{
-   width: 340px;
    border-radius: 10px;
    height: 340px;
    justify-self: start;
 }
 
 h3{
-    color: black;
+    z-index: 20;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-weight: 500;
     font-size: 18px;
-    font-family: 'Montserrat';
-
 }
