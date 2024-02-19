@@ -11,7 +11,7 @@ function Collapse({children}){
     };
 
     return(
-        <div className='info-collapse'>
+        <div className='collapse'>
             <button onClick={toggleCollapse} className='btn-collapse'>
                 description
                 <FontAwesomeIcon icon={faChevronUp} className='icon'/>

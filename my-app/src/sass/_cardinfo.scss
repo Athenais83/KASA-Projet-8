@@ -11,10 +11,12 @@
     font-family: 'Montserrat';
 }
 
-.collapse{
+.info-collapse{
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .cardinfo{

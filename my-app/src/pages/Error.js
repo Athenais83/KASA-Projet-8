@@ -1,5 +1,6 @@
 import React from "react"
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import '../sass/_error.scss'
 
 function Error (){
@@ -13,7 +14,10 @@ function Error (){
             </div>
             <div className="lien">
                 <a href="/">Retourner sur la page d'accueil</a>
-            </div></>
+            </div>
+            <Footer/>
+            </>
+            
     )
 }
 

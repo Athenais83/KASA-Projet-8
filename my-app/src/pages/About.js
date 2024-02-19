@@ -11,16 +11,16 @@ function About(){
         <Banner imageUrl="/assets/source2.png"/>
         <div className='collapse'>
         <Collapse>
-        <p>Fiabilité</p>
+        <h2>Fiabilité</h2>
         </Collapse>
         <Collapse>
-        <p>Respect</p>
+        <h2>Respect</h2>
         </Collapse>
         <Collapse>
-        <p>Service</p>
+        <h2>Service</h2>
         </Collapse>
         <Collapse>
-        <p>Sécurité</p>
+        <h2>Sécurité</h2>
         </Collapse>
         </div>
         <Footer />
