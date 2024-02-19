@@ -40,7 +40,7 @@ function CardInfo () {
                 </div>
                 <h3 className='title'>{cardData.title}</h3>
                 <h2 className='location'>{cardData.location}</h2>
-                <p className='tags'>{cardData.tags}</p>
+                <div className='tags'>{cardData.tags}</div>
                 <div className='info-location'>
                 <p className='name'>{cardData.host.name}</p>
                 <img src={cardData.host.picture} alt="" className='picture'/>

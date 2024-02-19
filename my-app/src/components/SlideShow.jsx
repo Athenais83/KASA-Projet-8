@@ -1,6 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick'
 import '../sass/slide.scss'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -26,9 +28,9 @@ const SlideShow = ({pictures}) => {
 
    return(
     <Slider className='carousel' {...settings}>
-        {pictures.map((cardData, index)=>(
+        {pictures.map((image, index)=>(
             <div key={index}>
-                <img src={cardData} alt={""}/>
+                <img src={image} alt={""}/>
             </div>
         ))}
     </Slider>
