@@ -1,16 +1,18 @@
 .btn-collapse{
     color: white;
     background-color: #FF6060;
-    width: 50%;
+    width: 90%;
     border-radius: 10px;
     font-size: 20px;
     text-align: left;
     border: #FF6060;
     display: flex;
+    height: 40px;
     font{
         width: 90%;
         display: flex;
         flex-direction:row;
+        padding-top: 3px;
     }
 }
 
@@ -22,4 +24,5 @@
 
 .icon{
     padding-left: 20px;
+    padding-top: 10px;
 }

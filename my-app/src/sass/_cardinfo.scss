@@ -23,6 +23,7 @@
 
 .cardinfo{
     width: 100%;
+    margin: auto;
 }
 
 .slide{
@@ -38,9 +39,11 @@
     font-family: 'Montserrat';
     font-size: 18px;
     margin: 20px;
-    
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
-   
 }
 
 .info-location{
