@@ -3,6 +3,7 @@
     margin-left: 60px;
     margin-right: 60px;
     padding-top: 10px;
+    position: relative;
 }
 
 .carousel img{
@@ -13,9 +14,9 @@
 }
 
 .custom-prev-arrow{
-    left: 65px;
+    left: 20px;
     position: absolute;
-    top: 35%;
+    top: 40%;
     z-index: 1;
     background-color: transparent;
     border: none;
@@ -26,10 +27,19 @@
 .custom-next-arrow{
     right: 80px;
     position: absolute;
-    top: 35%;
+    top: 40%;
     z-index: 1;
     background-color: transparent;
     border: none;
     font-size: 80px;
     color: white;
+}
+
+.slide-number{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:white;
+    padding: 5px 10px;
 }
