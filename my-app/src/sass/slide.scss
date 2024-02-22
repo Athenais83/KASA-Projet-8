@@ -1,19 +1,18 @@
 .carousel{
     width: 100%;
-    margin: auto;
+    margin: 60px;
 }
 
 .carousel img{
-    width: 1240px;
-    height: 620px;
-    margin: auto;
-    
+    width: 95%;
+    height: 600px;
+    border-radius: 20px;
 }
 
 .custom-prev-arrow{
-    left: 10px;
+    left: 70px;
     position: absolute;
-    top: 45%;
+    top: 50%;
     z-index: 1;
     background-color: transparent;
     border: none;
@@ -22,9 +21,9 @@
 }
 
 .custom-next-arrow{
-    right: 10px;
+    right: 30px;
     position: absolute;
-    top: 45%;
+    top: 50%;
     z-index: 1;
     background-color: transparent;
     border: none;
