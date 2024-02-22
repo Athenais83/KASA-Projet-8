@@ -7,7 +7,9 @@ function Banner ({imageUrl, text}) {
         <div className="banner">
             <img src={imageUrl} alt={"Image" + imageUrl} className="image-banner"/>
             <div className="overlay"></div>
-            <p className="text-image">{text}</p>
+            <div className="contenu">
+            <p>{text}</p>
+            </div>
         </div>
         
     )
