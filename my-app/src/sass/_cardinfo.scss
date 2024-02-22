@@ -1,16 +1,23 @@
+.lieu{
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
 .title{
     color: #FF6060;
     font-size: 30px;
     font-family: 'Montserrat';
     font-weight: bold;
-    margin: 20px;
+    margin-right: 8px;
 }
 
 .location{
     color: #FF6060;
     font-size: 18px;
     font-family: 'Montserrat';
-    margin: 20px;
+    margin-left: 60px;
+    padding-bottom: 10px;
 }
 
 .info-collapse{
@@ -33,12 +40,13 @@
 .tags{
     display: flex;
     flex-direction: row;
+    padding-bottom: 20px;
     div{ background-color: #FF6060;
     color: white;
     border-radius: 20px;
     font-family: 'Montserrat';
     font-size: 18px;
-    margin: 20px;
+    margin-left: 60px;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -47,10 +55,13 @@
 }
 
 .info-location{
+   margin-left: auto;
+   padding-top: 10px;
+}
+
+.host-info{
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-right: 20px;
+    align-items: center;
 }
 
 .name{
@@ -61,14 +72,16 @@
 
 .picture{
     border-radius: 70px;
-    width: 60px;
+    width: 50px;
+    height: auto;
+
 }
 .star-rating{
     display: flex;
     flex-direction: row;
-    justify-content: end;
     padding-top: 10px;
-    padding-right: 25px;
+    margin-left: 40px;
+    margin-right: 30px;
 }
 .star-filled{
     color: #FF6060;

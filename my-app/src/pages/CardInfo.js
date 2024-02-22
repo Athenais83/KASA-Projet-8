@@ -38,20 +38,24 @@ function CardInfo () {
               <div className='slide'>
                 <SlideShow pictures={cardData.pictures}/>
                 </div>
+                <div className='lieu'>
                 <h3 className='title'>{cardData.title}</h3>
+                <div className='info-location'>
+                  <div className='host-info'>
+                  <p className='name'>{cardData.host.name}</p>
+                  <img src={cardData.host.picture} alt="" className='picture'/>
+                </div>
+                <div className='star-rating'>
+                  {generateStarRating(cardData.rating)}
+                </div>
+                </div>
+                </div>
                 <h2 className='location'>{cardData.location}</h2>
                 <div className='tags'>{cardData.tags.map((tag, index)=>(
             <div key={index}>
                 {tag}
             </div>
         ))}</div>
-                <div className='info-location'>
-                <p className='name'>{cardData.host.name}</p>
-                <img src={cardData.host.picture} alt="" className='picture'/>
-                </div>
-                <div className='star-rating'>
-                  {generateStarRating(cardData.rating)}
-                </div>
                 <div className='info-collapse'>
                 <Collapse title="Description">
                 <p>{cardData.description}</p>

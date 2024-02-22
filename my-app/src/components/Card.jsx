@@ -8,7 +8,7 @@ function Card({ id, title, cover}) {
         <article className='card'>
             <Link to={`/CardInfo/${id}`} className="gallery_card">
                 <img src={cover} alt={title} className='img_card'/>
-                <h3>{title}</h3>
+                <h3 className='title-card'>{title}</h3>
             </Link>
         </article>
     ); 
