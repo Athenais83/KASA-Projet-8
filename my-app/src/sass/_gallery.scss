@@ -1,12 +1,14 @@
 .card_gallery{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     justify-content: stretch;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 70px;
+    margin: 60px;
+    background-color: #F6F6F6;
+    padding: 30px;
 }
 
 .gallery_card{
