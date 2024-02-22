@@ -23,7 +23,15 @@
     flex-direction: column;
 }
 
+.info-about{
+    background-color: #F6F6F6;
+    width: 90%;
+    margin-left: 45px;
+}
+
 .icon{
-    padding-left: 20px;
-    padding-top: 10px;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    padding-right: 10px;
 }

@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import '../sass/_collapse.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function Collapse({children, title}){
     const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +12,9 @@ function Collapse({children, title}){
         <div className='collapse'>
             <button onClick={toggleCollapse} className='btn-collapse'>
                 {title}
-                <FontAwesomeIcon icon={faChevronUp} className='icon'/>
+                <img src={isOpen ? "/assets/VectorClose.png" : "/assets/VectorOpen.png"} alt="" className='icon'/>
             </button>
-            {isOpen && <div>{children}</div>}
+            {isOpen && <div className='info-about'>{children}</div>}
         </div>
             );
 };
