@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import '../sass/slide.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const SlideShow = ({ pictures }) => {
@@ -25,11 +23,11 @@ const SlideShow = ({ pictures }) => {
     return (
         <div className='carousel'>
             <button className='custom-prev-arrow' onClick={goToPreviousSlide}>
-                <FontAwesomeIcon icon={faChevronLeft}/>
+                <img src="/assets/VectorPrev.png" alt=""/>
             </button>
             <img src={pictures[currentIndex]} alt={""}/>
             <button className='custom-next-arrow' onClick={goToNextSlide}>
-                <FontAwesomeIcon icon={faChevronRight}/>
+                <img src="/assets/VectorNext.png" alt=""/>
             </button>
             <div className="slide-number">{currentIndex + 1}/{pictures.length}</div>
         </div>
