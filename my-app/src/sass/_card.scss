@@ -1,6 +1,9 @@
 .card{
     width: 30%;
     margin-left: 20px;
+    @media (max-width:767.98px){
+        width: 90%;
+    }
 }
 
 .img_card{

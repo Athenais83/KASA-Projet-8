@@ -4,6 +4,10 @@
     width: 95%;
     margin-left: 50px;
     margin-right: 50px;
+
+    @media (max-width:767.98px){
+        width: 90%;
+    }
 }
 
 .image-banner{
@@ -22,6 +26,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media (max-width:767.98px){
+        left: 38%;
+        text-align: left;
+    }
 }
 
 .overlay{

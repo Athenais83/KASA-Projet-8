@@ -9,6 +9,10 @@
     margin: 60px;
     background-color: #F6F6F6;
     padding: 30px;
+    @media (max-width:767.98px){
+        width: 78%;
+        flex-direction: column;
+    }
 }
 
 .gallery_card{
