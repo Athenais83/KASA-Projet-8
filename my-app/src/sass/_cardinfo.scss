@@ -57,11 +57,19 @@
 .info-location{
    margin-left: auto;
    padding-top: 10px;
+   @media (max-width:767.98px){
+    display: flex;
+    flex-direction: column;
+   }  
 }
 
 .host-info{
     display: flex;
     align-items: center;
+    @media (max-width:767.98px){
+        order:2;
+        margin-top: 10px;
+    }
 }
 
 .name{
