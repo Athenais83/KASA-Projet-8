@@ -1,10 +1,8 @@
 .banner{
     position: relative;
     display: inline-block;
-    width: 95%;
-    margin-left: 50px;
-    margin-right: 50px;
-
+    width: 100%;
+    padding-bottom: 30px;
     @media (max-width:767.98px){
         width: 90%;
     }

@@ -1,6 +1,6 @@
 .card{
-    width: 30%;
-    margin-left: 20px;
+    width: 28%;
+    padding: 30px;
     @media (max-width:767.98px){
         width: 90%;
     }
@@ -10,6 +10,7 @@
    border-radius: 10px;
    height: 340px;
    width: 100%;
+   object-fit: cover;
 }
 
 .title-card{
