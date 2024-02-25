@@ -5,6 +5,13 @@
   padding-top: 10px;
   position: relative;
 }
+@media (max-width: 767.98px) {
+  .carousel {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
 
 .carousel img {
   width: 95%;
@@ -13,6 +20,11 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 767.98px) {
+  .carousel img {
+    width: 100%;
+  }
+}
 
 .custom-prev-arrow {
   left: 20px;
@@ -20,6 +32,11 @@
   top: 40%;
   background-color: transparent;
   border: none;
+}
+@media (max-width: 767.98px) {
+  .custom-prev-arrow {
+    left: 0;
+  }
 }
 .custom-prev-arrow img {
   width: 100%;
@@ -34,6 +51,11 @@
   top: 40%;
   background-color: transparent;
   border: none;
+}
+@media (max-width: 767.98px) {
+  .custom-next-arrow {
+    right: 0;
+  }
 }
 .custom-next-arrow img {
   width: 100%;
