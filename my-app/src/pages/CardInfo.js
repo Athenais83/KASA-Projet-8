@@ -56,6 +56,15 @@ function CardInfo () {
                 {tag}
             </div>
         ))}</div>
+        <div className='info-location-mobile'>
+        <div className='host-info'>
+                  <p className='name'>{cardData.host.name}</p>
+                  <img src={cardData.host.picture} alt="" className='picture'/>
+                </div>
+                <div className='star-rating'>
+                  {generateStarRating(cardData.rating)}
+                </div>
+                </div>
                 <div className='info-collapse'>
                 <Collapse title="Description">
                 <p>{cardData.description}</p>

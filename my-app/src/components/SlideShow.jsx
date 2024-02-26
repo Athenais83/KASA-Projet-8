@@ -30,7 +30,7 @@ const SlideShow = ({ pictures }) => {
             <img src={pictures[currentIndex]} alt={""}/>
             {!isSingleImage && (
             <button className='custom-next-arrow' onClick={goToNextSlide}>
-                <img src="/assets/VectorNext.png" alt=""/>
+                <img src="/assets/arrow_next.png" alt=""/>
             </button>
             )}
             {!isSingleImage && (
