@@ -23,6 +23,13 @@
     padding-top: 10px;
 }
 
+.center{
+    align-items: center;
+    .collapse{
+        align-items: center;
+    }
+}
+
 .info-about{
     background-color: #F6F6F6;
     width: 80%;

@@ -24,7 +24,7 @@ const SlideShow = ({ pictures }) => {
         <div className='carousel'>
             {!isSingleImage && (
             <button className='custom-prev-arrow' onClick={goToPreviousSlide}>
-                <img src="/assets/VectorPrev.png" alt=""/>
+                <img src="/assets/arrow_prev.png" alt=""/>
             </button>
             )}
             <img src={pictures[currentIndex]} alt={""}/>
