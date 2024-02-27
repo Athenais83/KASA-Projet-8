@@ -10,7 +10,7 @@ function Collapse({children, title}){
 
     return(
         <div className='collapse'>
-            <button onClick={toggleCollapse} className='btn-collapse'>
+            <button onClick={toggleCollapse} className={`btn-collapse ${isOpen ? 'open' : ''}`}>
                 {title}
                 <img src={isOpen ? "/assets/VectorClose.png" : "/assets/VectorOpen.png"} alt="" className='icon'/>
             </button>
