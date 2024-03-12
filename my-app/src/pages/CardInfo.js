@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import Logement from '../data/logement.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -7,15 +7,19 @@ import SlideShow from '../components/SlideShow';
 import '../sass/_cardinfo.scss';
 import Collapse from '../components/Collapse';
 
+
 function CardInfo () {
     const {id} = useParams();
     const [cardData, setCardData] = useState(null);
 
-    useEffect(()=>{
-        const data = Logement.find(card=>card.id===id);
-        setCardData(data);
-    },[id]);
-
+    
+ const data = Logement.find(card=>card.id===id);
+        if(!data){
+          return <Navigate to="./Error"/>
+        }else if(!cardData){
+          setCardData(data);
+        }
+        
     const generateStarRating = (rating) => {
       const roundedRating = Math.round(rating);
       const stars = [];
